@@ -17,9 +17,11 @@
 
 
 使用示例：  
-    HttpHelper helper=HttpHelper.getHelper();  
-    helper.getCookie("loginurl", map,null);  
-    System.out.println(helper.get("privateurl"));  
-    helper.closeClient();  
+```java
+HttpHelper helper=HttpHelper.getHelper();  
+helper.getCookie("loginurl", map,null);  
+System.out.println(helper.get("privateurl"));  
+helper.closeClient();  
+```
 
 由于技术和经验方面的原因，代码写的可能有很多没有考虑到的地方，望大家不吝指教。
