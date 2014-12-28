@@ -19,7 +19,9 @@
 使用示例：  
 ```java
 HttpHelper helper=HttpHelper.getHelper();  
+//如果需要先获取Cookie，则在这里获取一下，cookie就会保存下来
 helper.getCookie("loginurl", map,null);  
+//helper中已有cookie，就可以正确获得需要Cookie的页面的信息了
 System.out.println(helper.get("privateurl"));  
 helper.closeClient();  
 ```
